@@ -10,6 +10,7 @@ def main():
 
     while True:
         sock.send_multipart([b'', json.dumps({'time' : time.time()}).encode('ascii')])
+        time.sleep(1.0)
 
 if '__main__' == __name__:
     main()        
