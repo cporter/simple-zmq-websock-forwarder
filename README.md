@@ -23,3 +23,8 @@ For the webserver:
 
 This will start a webserver on port 8000. Open a browser to http://localhost:8000
 and an application that displays whatever the python producer sends it will start.
+
+## How to do it with docker
+
+    docker build -t zmq_proxy:latest .
+    docker run --rm -p 8000:8000 zmq_proxy:latest
